@@ -18,8 +18,8 @@ pub fn spawn_player(mut commands: Commands) {
         .insert(Target::default())
         .insert(Player)
         .insert(Movement {
-            thrust: 500.0,
-            friction: 1.0,
+            thrust: 2000.0,
+            friction: 7.5,
             ..Movement::default()
         })
         .insert(InputDirection::default())

@@ -77,7 +77,6 @@ fn handle_movement(time: Res<Time>, mut query: Query<(&Target, &Movement, &mut T
             angle = 0.0;
         }
 
-        println!("angle: {}", angle);
         transform.rotation = Quat::from_rotation_z(angle);
     }
 }
